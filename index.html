@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptado y Desencripado de Texto</title>
+    <link rel="icon" href="images/codificacion.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logoAlura">
+        <img class="Alura" src="images/Vector.png" alt="Logo de Alura" />
+      </div>
+    </header>
+    <main>
+      <div class="containerTexto">
+        <textarea
+          id="textoUsuario"
+          class="textoUsuario"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="containerAdvertencias">
+          <img
+            class="exclamacion"
+            src="images/Group.png"
+            alt="Signo de exclamación"
+          />
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="containerButtons">
+          <button id="btnEncriptar" class="encriptar" type="button">
+            Encriptar
+          </button>
+          <button id="btnDesencriptar" class="desencriptar" type="button">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div id="resultadoEncriptado" class="resultadoEncriptado">
+        <div id="backResultado">
+          <img src="images/Muñeco.png" alt="Imagen de un muñeco" />
+          <div class="noTexto">
+            <p class="mensajeNoEncontrado">Ningún mensaje fue encontrado</p>
+            <p class="instruccion">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+        </div>
+          <button id="btnCopy" class="Copiar hiddenCopy" type="button">
+            Copiar
+          </button>
+      </div>
+    </main>
+    <footer>
+      <p class="creditos">Creado por Mafer Vago</p>
+    </footer>
+  </body>
+
+  <script src="/app.js"></script>
+</html>
